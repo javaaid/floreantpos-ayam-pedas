@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="resources:hibernate.mysql.cfg.xml" uuid="1a636464-ad2a-4790-8e75-a9a74278ae43">
+      <user-name>app</user-name>
+      <user-password>dfd9dfcb</user-password>
+    </data-source>
+    <data-source name="hibernate.mysql.cfg.xml" uuid="ef2d2360-91f0-4157-adc7-17a44223b15c">
+      <user-name>app</user-name>
+      <user-password>dfd9dfcb</user-password>
+    </data-source>
+    <data-source name="Derby - [2]" uuid="8bd4f6a8-2944-46e4-a525-2a105fcd271f">
+      <secret-storage>memory</secret-storage>
+    </data-source>
+    <data-source name="target:classes:hibernate.mysql.cfg.xml" uuid="8a6ea9fb-2b05-45d0-9455-9e65dc353698">
+      <user-name>app</user-name>
+      <user-password>dfd9dfcb</user-password>
+    </data-source>
+  </component>
+</project>

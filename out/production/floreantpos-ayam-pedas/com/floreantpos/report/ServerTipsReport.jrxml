@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DrawerPullVoidReport" pageWidth="226" pageHeight="200" whenNoDataType="AllSectionsNoDetail" columnWidth="224" leftMargin="1" rightMargin="1" topMargin="1" bottomMargin="1" isFloatColumnFooter="true" isIgnorePagination="true" uuid="a59339d0-926f-4c10-a384-573e2ea80562">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="headerLine1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="server" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fromDate" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="toDate" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportDate" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="transactionCount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cashTips" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="chargedTips" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tipsDue" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="saleType" class="java.lang.String">
+		<fieldDescription><![CDATA[saleType]]></fieldDescription>
+	</field>
+	<field name="ticketId" class="java.lang.Integer">
+		<fieldDescription><![CDATA[ticketId]]></fieldDescription>
+	</field>
+	<field name="ticketTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[ticketTotal]]></fieldDescription>
+	</field>
+	<field name="tips" class="java.lang.String">
+		<fieldDescription><![CDATA[tips]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="177" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3adbce91-15cd-43a4-8668-c1ec270ada6d" key="textField-12" x="0" y="0" width="223" height="18" isRemoveLineWhenBlank="true"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{headerLine1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="42f386ff-ac9f-46f6-9658-c0d7924246bf" key="staticText-1" x="0" y="20" width="224" height="15"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[LAPORAN TIPS PELAYAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7fcedb6e-1c55-49be-8bff-62d5621256b7" key="staticText-2" x="0" y="40" width="120" height="12"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[PELAYAN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="14818b5f-4138-4ce3-aa84-77a48d31f386" key="staticText-2" x="0" y="55" width="120" height="12"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[DARI:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="398124e9-64f0-46c0-8561-2199ab1d2da6" key="staticText-2" x="0" y="70" width="120" height="12"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[SAMPAI:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f39e323f-1180-4360-96a0-f94d7eb8d142" key="staticText-2" x="0" y="85" width="120" height="12"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[TGL:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c57538be-48c7-45ec-a42c-b17e7d467e22" key="staticText-2" x="0" y="100" width="120" height="12"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[JLH TRANSAKSI:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fdf96a7d-e8c3-41f7-8b42-aec1e35f1637" key="staticText-2" x="0" y="130" width="120" height="12"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[CHARGED TIPS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="38fe1ca8-cdcf-4517-9199-050bb551e3ea" key="staticText-2" x="0" y="115" width="120" height="12"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[CASH TIPS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bff96eec-014c-4b7d-a128-514d9a162709" key="staticText-2" x="0" y="145" width="120" height="12"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[TIPS DUE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="49ac6dce-e663-4c18-9b2a-546c31df05b6" key="staticText-2" x="0" y="162" width="41" height="15"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[REF#]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fb4c7c40-e7ae-434b-abcd-a9d3ff55e8f4" key="staticText-2" x="41" y="162" width="59" height="15"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[CD TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a0dd435b-a84c-4117-be73-064a0307e853" key="staticText-2" x="100" y="162" width="65" height="15"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029eac05-6bc2-41d3-9cee-056848d4bae7" key="staticText-2" x="165" y="162" width="58" height="15"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[TIPS]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8c2b93fc-cc35-47bb-b9a4-aeac61b0282f" x="124" y="40" width="100" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{server}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d45a8be5-baf7-481c-b640-d6385554d9c6" x="124" y="55" width="100" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fromDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9ed50ae5-525d-4130-a223-0a791fb925fc" x="124" y="70" width="100" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{toDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8fa66496-0e99-4404-a3d0-9ab16e71401d" x="124" y="85" width="100" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="37eac470-87ff-47a1-9499-03fa30611d6f" x="124" y="100" width="100" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transactionCount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="85b4ba6b-d0e7-4677-a25c-0b42b9bcc913" x="124" y="130" width="100" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{chargedTips}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8669e852-4802-4dcd-b2a4-73b9c0dd6865" x="124" y="115" width="100" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cashTips}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6412cb22-3154-425d-a69a-95b983dec4c5" x="124" y="145" width="100" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tipsDue}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="3c2c9875-1086-4124-ae4e-e2efd107972a" x="0" y="0" width="41" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ticketId}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="e093afb6-4705-4c4d-acb4-f2f54744c0b4" x="41" y="0" width="59" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saleType}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="cb704585-4a38-495d-9c8d-883904e95a4f" x="100" y="0" width="65" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ticketTotal}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="82e90edb-5130-41f0-bca9-79f7aba27f25" x="165" y="0" width="59" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tips}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

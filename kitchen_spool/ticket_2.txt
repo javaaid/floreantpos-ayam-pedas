@@ -1,0 +1,27 @@
+                              
+    *** KITCHEN ***           
+  *DINE IN*                   
+  Terminal#: 3715             
+  CHK#: 2                     
+  Table#: 8                   
+  Guests: -1                  
+  Server: Admin User          
+  Printed: 8/13/15, 11:26 PM  
+                              
+                              
+                              
+ ITEM         QTY             
+ ...........................  
+  Telor         2             
+                              
+ ...........................  
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+
+

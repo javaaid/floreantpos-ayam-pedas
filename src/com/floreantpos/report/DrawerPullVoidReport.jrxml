@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DrawerPullVoidReport" pageWidth="226" pageHeight="60" columnWidth="226" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="83f28e90-9d44-4ce5-8442-ead2f0ab3701">
+	<property name="ireport.zoom" value="3.1384283767210035"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<subDataset name="Table Dataset 1" uuid="cb4c7813-af46-413a-a82e-a26eea255b94"/>
+	<parameter name="totalVoid" class="java.lang.Double" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="amount" class="java.lang.Double">
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="code" class="java.lang.Integer">
+		<fieldDescription><![CDATA[code]]></fieldDescription>
+	</field>
+	<field name="reason" class="java.lang.String">
+		<fieldDescription><![CDATA[reason]]></fieldDescription>
+	</field>
+	<field name="hast" class="java.lang.String">
+		<fieldDescription><![CDATA[hast]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="16" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="933f855e-9b45-4299-9685-c4b01b689255" x="0" y="0" width="224" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement textAlignment="Center">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VOID/REFUNDS (BELUM PAJAK)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="13" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c6aba42b-d3cb-4b56-b423-c72bf81c2d1c" x="0" y="0" width="39" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[KODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="433012ff-8ba5-475f-880c-289a038cbbf4" x="39" y="0" width="75" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[ALASAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b1b79ee8-16ca-4882-8c20-97f163b60be2" x="114" y="0" width="52" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[KERUGIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8c63ad77-abcf-419f-b498-3e615ff468cb" x="166" y="0" width="58" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="83efbfdb-f79f-4844-9b8e-27eeacc8e1b4" x="0" y="12" width="226" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4ce3e4b6-1f8e-4b2c-9805-d4ab6b9b66b7" x="166" y="0" width="58" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="29a0113a-fb30-4e70-bd41-97b7dc8ed89e" x="0" y="0" width="39" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{code}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="26e467e5-2166-4e10-be93-3558b7b0c1e1" x="39" y="0" width="75" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reason}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="93e42ffd-782b-4be8-837d-c3d90781457e" x="114" y="0" width="52" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hast}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="12" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2b5e1d4c-5095-4858-8d57-48f78b999a03" x="114" y="0" width="39" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1fb8661a-760c-4253-9994-1856c3948323" x="156" y="0" width="68" height="12"/>
+				<box leftPadding="2" rightPadding="2"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVoid}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="370f7ef9-8282-4c04-94be-6199f867f258" x="0" y="0" width="226" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

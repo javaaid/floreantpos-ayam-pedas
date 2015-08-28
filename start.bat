@@ -1,0 +1,1 @@
+java -Duser.language=in -Duser.region=ID -classpath "C:\Users\Leonar Tambunan\floreantpos\target\classes;C:\Users\Leonar Tambunan\floreantpos\i18n;C:\Users\Leonar Tambunan\floreantpos\local-lib\*"  com.floreantpos.main.Main

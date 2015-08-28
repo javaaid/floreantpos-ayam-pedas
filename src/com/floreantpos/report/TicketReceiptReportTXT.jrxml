@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TicketReceiptReportTXT" pageWidth="226" pageHeight="220" whenNoDataType="BlankPage" columnWidth="226" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isFloatColumnFooter="true" isIgnorePagination="true" uuid="e1e8ae50-e86f-494c-a1a2-a6f136e82da5">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="164"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="checkNo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tableNo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="guestCount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="serverName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportDate" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="headerLine1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="headerLine2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="headerLine3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="headerLine4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="headerLine5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="grandSubtotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="grandTotal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="taxAmount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tipAmount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="netAmount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="currencySymbol" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="changedAmount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="paidAmount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="serviceCharge" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="discountAmount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="footerMessage" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="receiptType" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="showHeaderSeparator" class="java.lang.Boolean" isForPrompting="false"/>
+	<parameter name="terminal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="totalText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="discountText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="taxText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="serviceChargeText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tipsText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="netAmountText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="paidAmountText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="changeAmountText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="showFooter" class="java.lang.Boolean" isForPrompting="false"/>
+	<parameter name="showSubtotal" class="java.lang.Boolean" isForPrompting="false"/>
+	<parameter name="itemText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="quantityText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="subTotalText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ticketHeader" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="deliveryChargeText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="deliveryCharge" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="dueAmountText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="dueAmount" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="additionalProperties" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="approvalCode" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="cardPayment" class="java.lang.Boolean" isForPrompting="false"/>
+	<field name="itemQty" class="java.lang.String"/>
+	<field name="itemName" class="java.lang.String"/>
+	<field name="itemSubtotal" class="java.lang.String"/>
+	<title>
+		<band height="100" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="977be1b7-917d-4ce1-a760-9389ee761781" key="textField-12" x="12" y="9" width="148" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{headerLine1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="17e811e0-1a24-475c-abae-d64e7a5bb9f8" key="textField-13" x="12" y="21" width="148" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{headerLine2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="bbe5eef9-71cc-4ac7-86b4-dc3ee5e425cf" key="textField-14" x="12" y="33" width="148" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{headerLine3}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="e055a94e-786c-4e42-8506-f1fd18ae4a57" key="textField-15" x="12" y="45" width="148" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{headerLine4}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="2109ff20-5a1a-4c5e-b1d0-e3fef9e0dba0" key="textField-16" x="12" y="57" width="148" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{headerLine5}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="ae06f812-2d5e-426e-9257-49381d61894f" key="textField-16" x="12" y="69" width="148" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{receiptType}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="05a94ae0-4cc6-4e63-8b3f-1a83135a8852" stretchType="RelativeToBandHeight" x="12" y="81" width="200" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement markup="html">
+					<font fontName="DejaVu Sans Mono" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ticketHeader}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement uuid="830a4e4b-dcd6-407c-9fa3-b95e59d9bb5f" key="staticText-2" x="6" y="0" width="72" height="12"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{itemText}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0d0b349c-5b0e-471c-b6f4-749d8470cca0" key="staticText-1" x="102" y="0" width="19" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{quantityText}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d03b4691-47b8-4f07-a2c8-fabd389443d1" key="staticText-4" x="126" y="0" width="80" height="12">
+					<printWhenExpression><![CDATA[$P{showSubtotal}==true]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTotalText}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="4f21f345-c1e4-4a45-8299-96c81069e26a" x="6" y="12" width="200" height="10"/>
+				<textElement verticalAlignment="Middle">
+					<font size="6" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[..........................................................................................................................................]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch">
+			<printWhenExpression><![CDATA[Boolean.valueOf(String.valueOf($V{PAGE_NUMBER}).equals("1"))]]></printWhenExpression>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="56ec2a85-84d8-4f4c-aa7c-c132c2ea6d73" key="textField" x="12" y="0" width="96" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{itemName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="e69b006b-4c4c-4977-b5fa-77fcdf8fc321" key="textField" x="134" y="0" width="80" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$P{showSubtotal}==true]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{itemSubtotal}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="ed8cea89-059b-4bc5-a181-bc77913eafc2" key="textField" x="111" y="0" width="19" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{itemQty}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<lastPageFooter>
+		<band splitType="Prevent"/>
+	</lastPageFooter>
+	<summary>
+		<band height="160" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="40507eb8-c305-4f93-8af8-8f3e13ec4b56" key="staticText-8" x="6" y="67" width="120" height="12">
+					<printWhenExpression><![CDATA[$P{tipAmount}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tipsText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="fc135d7e-ba0d-4adb-9ead-3786038fdf8c" key="staticText-5" x="6" y="15" width="120" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="255af7ac-99f0-4890-a037-e6ff1a0fc16b" key="staticText-7" x="6" y="93" width="120" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{netAmountText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="1d64064e-aca5-4186-93ba-1a1987362d56" key="textField-1" x="134" y="119" width="80" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dueAmount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="89c6efc6-b94c-40c8-b9d9-baf6f2d775f6" key="staticText-6" x="6" y="41" width="120" height="12">
+					<printWhenExpression><![CDATA[$P{taxAmount}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{taxText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="bb5bf992-c241-4818-b709-00fb459cdaa9" key="textField" x="134" y="15" width="80" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grandSubtotal}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="bd41698e-048e-42e3-97c5-61eac9abbee0" key="textField" x="134" y="93" width="80" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{netAmount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="aa5637be-f508-4eed-8af3-e03c6805dbe2" key="textField" x="134" y="41" width="80" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{taxAmount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="f9387a46-9339-41a0-99b7-0296ae00568d" key="staticText-9" x="6" y="119" width="120" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dueAmountText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="c020cbfb-1e87-406c-877f-6ed0cddea1a9" key="textField" isPrintRepeatedValues="false" x="134" y="67" width="80" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tipAmount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="2bf5fcd3-b3eb-4d3e-8459-b005601ce8f0" key="textField" x="134" y="106" width="80" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paidAmount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="0804da52-7cdc-4f8e-9b36-d923276af63c" key="staticText-7" x="6" y="106" width="120" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paidAmountText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="126be7c4-b3d3-43e9-805a-bfba815b92fa" key="staticText-8" x="6" y="54" width="120" height="12">
+					<printWhenExpression><![CDATA[$P{serviceCharge}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{serviceChargeText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="9171a06b-3722-4c63-ab6a-3254e9b9b116" key="textField" x="134" y="54" width="80" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{serviceCharge}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="71fd6d12-181c-4733-a038-abb96105c502" key="staticText-6" x="6" y="28" width="120" height="12">
+					<printWhenExpression><![CDATA[$P{discountAmount}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{discountText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="77a7b571-4efc-4497-809a-0c63ed472968" key="textField" x="134" y="28" width="80" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{discountAmount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="a6ecf185-f6f0-4336-9c12-fe5799bdf1b5" key="staticText-8" x="6" y="80" width="120" height="12">
+					<printWhenExpression><![CDATA[$P{tipAmount}!=null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deliveryChargeText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="a9ff5bb9-d32e-43ec-9758-a828d0dffaf6" key="textField" isPrintRepeatedValues="false" x="134" y="80" width="80" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deliveryCharge}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="4350ba56-c17d-4edb-a7b3-22cbac74d0f0" key="staticText-9" x="6" y="132" width="120" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{changeAmountText}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="8dbb39e6-58fd-4d6a-9828-88316b709253" key="textField-1" x="134" y="132" width="80" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Sans Mono" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{changedAmount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="4f21f345-c1e4-4a45-8299-96c81069e26a" x="6" y="0" width="200" height="10"/>
+				<textElement verticalAlignment="Middle">
+					<font size="6" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[..........................................................................................................................................]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

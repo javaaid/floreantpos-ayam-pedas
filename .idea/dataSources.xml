@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3390937308">
+    <data-source source="LOCAL" name="resources:hibernate.mysql.cfg.xml" uuid="1a636464-ad2a-4790-8e75-a9a74278ae43">
+      <driver-ref>derby.remote</driver-ref>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://localhost/posdb</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://C:\Users\Leonar Tambunan\floreantpos-ayam-pedas\local-lib\xml-apis-1.3.02.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.mysql.cfg.xml" uuid="ef2d2360-91f0-4157-adc7-17a44223b15c">
+      <driver-ref>derby.remote</driver-ref>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://localhost/posdb</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://C:\Users\Leonar Tambunan\.m2\repository\org\apache\derby\derbyclient\10.8.1.2\derbyclient-10.8.1.2.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Derby - [2]" uuid="8bd4f6a8-2944-46e4-a525-2a105fcd271f">
+      <driver-ref>derby.embedded</driver-ref>
+      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby:$PROJECT_DIR$/database/derby-single/posdb</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="target:classes:hibernate.mysql.cfg.xml" uuid="8a6ea9fb-2b05-45d0-9455-9e65dc353698">
+      <driver-ref>derby.remote</driver-ref>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://localhost/posdb</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://C:\Users\Leonar Tambunan\floreantpos-ayam-pedas\local-lib\xml-apis-1.3.02.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

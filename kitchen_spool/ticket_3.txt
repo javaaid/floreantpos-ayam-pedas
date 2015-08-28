@@ -1,0 +1,28 @@
+                              
+    *** KITCHEN ***           
+  *DINE IN*                   
+  Terminal#: 3715             
+  CHK#: 3                     
+  Table#: 8                   
+  Guests: -1                  
+  Server: Admin User          
+  Printed: 8/12/15, 11:56 PM  
+                              
+                              
+                              
+ ITEM         QTY             
+ ...........................  
+  Egg          100            
+                0             
+                              
+ ...........................  
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+
+

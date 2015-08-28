@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.mysql.cfg.xml" value="8bd4f6a8-2944-46e4-a525-2a105fcd271f" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/resources/hibernate.mysql.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/filters" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/i18n" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="floreant-libs">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/local-lib/anet-java-sdk-1.8.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/antlr-2.7.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/asm-1.5.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/asm-attrs-1.5.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/asm-commons-3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/asm-tree-3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/cglib-2.1_3.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-beanutils-1.8.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-beanutils-core-1.7.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-cli-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-codec-1.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-collections-3.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-configuration-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-digester-1.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-io-2.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-lang-2.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-logging-1.0.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-logging-api-1.0.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/commons-validator-1.4.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/derby-10.8.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/derbyclient-10.8.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/derbynet-10.8.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/dom4j-1.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/ecs-1.4.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/ehcache-1.2.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/ejb3-persistence-1.0.1.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/forms-1.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/forms_rt-7.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/foxtrot-2.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/hibernate-3.2.6.ga.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/hibernate-annotations-3.3.1.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/hibernate-commons-annotations-3.0.0.ga.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/itext-4.2.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jasperreports-4.8.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/javax.json-1.0.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/javax.json-api-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jcommon-1.0.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jdom-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jdtcore-3.1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jfreechart-1.0.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jide-oss-3.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jpos-110.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jpos-controls-110.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jspf.core-1.0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/jta-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/log4j-1.2.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/looks-2.2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/metawidget-all-3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/miglayout-2.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/mysql-connector-java-5.1.30.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/swing-layout-1.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/swingx-core-1.6.2-2.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/xalan-2.7.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/xercesImpl-2.4.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/xml-apis-1.3.02.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/httpclient-4.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/local-lib/httpcore-4.3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="httpmime-4.0.1" level="project" />
+    <orderEntry type="library" name="httpasyncclient-4.0.2" level="project" />
+    <orderEntry type="library" name="httpasyncclient-cache-4.0.2" level="project" />
+    <orderEntry type="library" name="httpclient-4.3.5" level="project" />
+    <orderEntry type="library" name="httpclient-cache-4.3.5" level="project" />
+    <orderEntry type="library" name="httpcore-4.3.2" level="project" />
+    <orderEntry type="library" name="httpcore-nio-4.3.2" level="project" />
+    <orderEntry type="library" name="sigar" level="project" />
+  </component>
+</module>
+
